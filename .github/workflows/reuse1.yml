@@ -1,0 +1,15 @@
+name: Reuse2
+
+on:
+  workflow_call:
+   
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python
+        run: |
+          echo "printing"
+          ls -R
+          cat Dev.yml
+    
