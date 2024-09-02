@@ -36,4 +36,4 @@ graph TD;
     Z --> AA[Prod Environment Health Check];
     AA --> AB{Prod Health Check Passed};
     AB --> |Yes| S;
-    AB --> |No| T;
+    AB --> |No| AC[Deployment Stop];
